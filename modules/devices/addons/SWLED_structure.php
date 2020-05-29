@@ -12,6 +12,7 @@ $this->device_types['wled'] = array(
         'intensity'=>array('DESCRIPTION'=>'Intensity','_CONFIG_TYPE'=>'num', 'ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
         'palette'=>array('DESCRIPTION'=>'Palette','_CONFIG_TYPE'=>'num','ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
         'color'=>array('DESCRIPTION'=>'Color','_CONFIG_TYPE'=>'rgb','ONCHANGE'=>'colorUpdated','DATA_KEY'=>1),
+        'ip'=>array('DESCRIPTION'=>'IP','_CONFIG_TYPE'=>'text','DATA_KEY'=>1),
         'mqtt_v'=>array('DESCRIPTION'=>'V (MQTT)','ONCHANGE'=>'stateUpdated'),
         'mqtt_api'=>array('DESCRIPTION'=>'Api (MQTT)'),
     ),
