@@ -6,7 +6,7 @@ $this->device_types['wled'] = array(
     'CLASS'=>'SWLED',
     'DESCRIPTION'=>'WLED controller',
     'PROPERTIES'=>array( 
-        'brightness'=>array('DESCRIPTION'=>'Brightness','_CONFIG_TYPE'=>'num', 'ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
+        'brightness'=>array('DESCRIPTION'=>'Brightness (%)','_CONFIG_TYPE'=>'num', 'ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
         'effect'=>array('DESCRIPTION'=>'Effect','_CONFIG_TYPE'=>'num', 'ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
         'speed'=>array('DESCRIPTION'=>'Speed','_CONFIG_TYPE'=>'num', 'ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
         'intensity'=>array('DESCRIPTION'=>'Intensity','_CONFIG_TYPE'=>'num', 'ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),

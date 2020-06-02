@@ -3,7 +3,7 @@
 if ($params['NEW_VALUE'] == $params['OLD_VALUE']) return;
 
 $state = simplexml_load_string($params['NEW_VALUE']);
-$this->setProperty('brightness', $state->ac);
+$this->setProperty('brightness', round($state->ac*100/255));
 if ($state->ac > 0)
     $this->setProperty('status', 1);
 else
