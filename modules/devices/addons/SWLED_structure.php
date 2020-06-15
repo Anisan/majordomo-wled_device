@@ -6,6 +6,7 @@ $this->device_types['wled'] = array(
     'CLASS'=>'SWLED',
     'DESCRIPTION'=>'WLED controller',
     'PROPERTIES'=>array( 
+        'version'=>array('DESCRIPTION'=>'Firmware version','_CONFIG_TYPE'=>'readonly'),
         'brightness'=>array('DESCRIPTION'=>'Brightness (%)','_CONFIG_TYPE'=>'num', 'ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
         'effect'=>array('DESCRIPTION'=>'Effect','_CONFIG_TYPE'=>'num', 'ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
         'speed'=>array('DESCRIPTION'=>'Speed','_CONFIG_TYPE'=>'num', 'ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
@@ -13,6 +14,7 @@ $this->device_types['wled'] = array(
         'palette'=>array('DESCRIPTION'=>'Palette','_CONFIG_TYPE'=>'num','ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
         'color'=>array('DESCRIPTION'=>'Color','_CONFIG_TYPE'=>'rgb','ONCHANGE'=>'colorUpdated','DATA_KEY'=>1),
         'ip'=>array('DESCRIPTION'=>'IP','_CONFIG_TYPE'=>'text','DATA_KEY'=>1),
+        'cycle_mode'=>array('DESCRIPTION'=>'Cycle mode','_CONFIG_TYPE'=>'select','_CONFIG_OPTIONS'=>'1=Random effect,2=Random palette,3=Random effect and palette'),
         'cycle_timeout'=>array('DESCRIPTION'=>'Cycle timeout (sec)','_CONFIG_TYPE'=>'num'),
         'mqtt_v'=>array('DESCRIPTION'=>'V (MQTT)','ONCHANGE'=>'stateUpdated'),
         'mqtt_api'=>array('DESCRIPTION'=>'Api (MQTT)'),
