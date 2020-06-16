@@ -13,6 +13,7 @@ $this->device_types['wled'] = array(
         'intensity'=>array('DESCRIPTION'=>'Intensity','_CONFIG_TYPE'=>'num', 'ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
         'palette'=>array('DESCRIPTION'=>'Palette','_CONFIG_TYPE'=>'num','ONCHANGE'=>'paramsUpdated','DATA_KEY'=>1),
         'color'=>array('DESCRIPTION'=>'Color','_CONFIG_TYPE'=>'rgb','ONCHANGE'=>'colorUpdated','DATA_KEY'=>1),
+        'color2'=>array('DESCRIPTION'=>'Color 2','_CONFIG_TYPE'=>'rgb','ONCHANGE'=>'colorUpdated','DATA_KEY'=>1),
         'ip'=>array('DESCRIPTION'=>'IP','_CONFIG_TYPE'=>'text','DATA_KEY'=>1),
         'cycle_mode'=>array('DESCRIPTION'=>'Cycle mode','_CONFIG_TYPE'=>'select','_CONFIG_OPTIONS'=>'1=Random effect,2=Random palette,3=Random effect and palette'),
         'cycle_timeout'=>array('DESCRIPTION'=>'Cycle timeout (sec)','_CONFIG_TYPE'=>'num'),
