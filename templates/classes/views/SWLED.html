@@ -2,7 +2,7 @@
      setTimeout("$(\".icon%.object_id%_light\").removeClass(\"pressed\");",300);
      callMethod("%.object_title%.switch");
      $.get("<#ROOTHTML#>ajax/devices.html?op=clicked&object="+encodeURIComponent("%.object_title%"));'>
-<div class="device-icon %.status|"off;on"% icon%.object_id%_light" id="icon%.object_id%_light" style='margin-top: 10px; %.icon|"background-image:url(%.icon%)"%' ></div>
+<div class="device-icon %.status|"off;on"% icon%.object_id%_light" id="icon%.object_id%_light" style='margin-top: 10px; %.icon|"background-image:url(%.icon%)"%'>%.cycle_state|";C"%</div>
 </div>
 <div class="device-header">%.object_description% 
     <span class="btn btn-default btn-sm" style="float: right; margin-top: 0px;"  onclick="var url=('http://%.IP%');parent.$.fancybox.open({ src: url, type: 'iframe',iframe:{preload:false}});return false;">
