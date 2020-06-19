@@ -1,6 +1,6 @@
 <?php
 
-$presets = $this->getProperty("Presets");
+$presets = $this->getProperty("presets");
 $presets = json_decode($presets);
 unset($presets[count($presets)-1]);
-$this->setProperty("Presets", json_encode($presets));
+$this->setProperty("presets", json_encode($presets));

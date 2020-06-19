@@ -8,8 +8,8 @@ $preset .= ",".$this->getProperty('palette');
 $preset .= ",".$this->getProperty('color');
 $preset .= ",".$this->getProperty('color2');
 
-$presets = $this->getProperty("Presets");
+$presets = $this->getProperty("presets");
 $presets = json_decode($presets);
 $presets[] = $preset;
 
-$this->setProperty("Presets", json_encode($presets));
+$this->setProperty("presets", json_encode($presets));
